@@ -1,7 +1,7 @@
 function Items() {
   return (
     <div className="items">
-      <div
+      {/* <div
         style={{
           backgroundImage: 'url("https://img.freepik.com/free-photo/restaurant-interior_1127-3394.jpg?w=2000")'
         }}
@@ -76,10 +76,10 @@ function Items() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
       <div
         style={{
-          backgroundImage: 'url("https://img.freepik.com/free-photo/restaurant-interior_1127-3394.jpg?w=2000")'
+          backgroundImage: 'url("https://static.vecteezy.com/system/resources/previews/001/959/920/non_2x/blurred-busy-restaurant-background-free-photo.JPG")'
         }} className="item">
         <div className="container">
           <div className="wrapper">
