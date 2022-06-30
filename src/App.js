@@ -1,14 +1,9 @@
 import './App.css';
-import Header from './components/Header/Header';
-// import Main from './components/Main/Main';
-// import Footer from './components/Footer/Footer';
 
 function App() {
   return (
     <div>
-      <Header />
-      {/*<Main />
-      <Footer /> */}
+      <h1>Hello world</h1>
     </div>
   );
 }
