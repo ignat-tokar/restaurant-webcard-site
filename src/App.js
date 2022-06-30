@@ -1,28 +1,13 @@
 import './App.css';
 
-function Images() {
-  return (
-    <div>
-      {/* Background main */}
-      <img src="https://www.linguahouse.com/linguafiles/md5/d01dfa8621f83289155a3be0970fb0cb" />
-      {/* Background menu main */}
-      <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8cmVzdGF1cmFudCUyMGZvb2R8ZW58MHx8MHx8&w=1000&q=80" />
-      {/* Background menu overview vertical*/}
-      <img src="https://restaurace.pivovarskedomy.cz/files/thumbnails/setting/0/tb0st/denni-menu-karta-bg_700x1000_1_0.jpg" />
-      {/* Background menu overview horizontal */}
-      <img src="https://restaurace.pivovarskedomy.cz/files/thumbnails/setting/0/4vsrz/napojovy-listek-karta-bg_1080x460_1_0.png" />
-      {/* Image Plonovane akce */}
-      <img src="https://restaurace.pivovarskedomy.cz/files/thumbnails/image_contents/0/uqgq1/coolinarka-pd4_1068x710_1_0.jpg" />
-      {/* Image for footer */}
-      <img src="https://restaurace.pivovarskedomy.cz/files/thumbnails/image_contents/0/nikk3/jidlo-2_1068x710_1_0.JPG" />
-    </div>
-  );
-}
-
 function App() {
   return (
     <div>
-      <div className="Main-background">
+      <div className="Main-background"
+        style={{
+          backgroundImage: "url('https://www.linguahouse.com/linguafiles/md5/d01dfa8621f83289155a3be0970fb0cb')"
+        }}
+      >
         <div className="Menu">
           <span>LOGO</span>
           <ul>
@@ -55,7 +40,11 @@ function App() {
           Celý tým se na vás moc těší.</p>
         <span>ČÍST DÁLE</span>
       </div>
-      <div className="Menu-today">
+      <div className="Menu-today"
+        style={{
+          backgroundImage: "url('https://images.unsplash.com/photo-1600891964599-f61ba0e24092?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8cmVzdGF1cmFudCUyMGZvb2R8ZW58MHx8MHx8&w=1000&q=80')"
+        }}        
+      >
         <h2>Denni menu</h2>
         <p>POLEDNÍ MENU / POLÉVKA + HLAVNÍ CHOD
           POLÉVKA : Minestrone s kuskusem - v ceně menu,-
@@ -68,21 +57,37 @@ function App() {
       </div>
       <div className="Menu-all">
         <div className="Vertical-menu-wrapper">
-          <div className="Vertical-menu">
+          <div className="Vertical-menu"
+            style={{
+              backgroundImage: "url('https://restaurace.pivovarskedomy.cz/files/thumbnails/setting/0/tb0st/denni-menu-karta-bg_700x1000_1_0.jpg')"
+            }}           
+          >
             <h2>DENNI MENU</h2>
             <a href="#">Prohlédnout</a>
           </div>
-          <div className="Vertical-menu">
+          <div className="Vertical-menu"
+            style={{
+              backgroundImage: "url('https://restaurace.pivovarskedomy.cz/files/thumbnails/setting/0/tb0st/denni-menu-karta-bg_700x1000_1_0.jpg')"
+            }}            
+          >
             <h2>DENNI MENU</h2>
             <a href="#">Prohlédnout</a>
           </div>
-          <div className="Vertical-menu">
+          <div className="Vertical-menu"
+            style={{
+              backgroundImage: "url('https://restaurace.pivovarskedomy.cz/files/thumbnails/setting/0/tb0st/denni-menu-karta-bg_700x1000_1_0.jpg')"
+            }}            
+          >
             <h2>DENNI MENU</h2>
             <a href="#">Prohlédnout</a>
           </div>
         </div>
         <div className="Horizontal-menu-wrapper">
-          <div className="Horizontal-menu">
+          <div className="Horizontal-menu"
+            style={{
+              backgroundImage: "url('https://restaurace.pivovarskedomy.cz/files/thumbnails/setting/0/4vsrz/napojovy-listek-karta-bg_1080x460_1_0.png')"
+            }} 
+>
             <h2>Napojovy listek</h2>
             <a href="#">Prohlédnout</a>
           </div>
@@ -97,10 +102,12 @@ function App() {
         <h2>PLÁNOVANÉ AKCE</h2>
         <h3>Nenechte si ujít nejbližší akce</h3>
         <div className="Akce-block">
+          <img src="https://restaurace.pivovarskedomy.cz/files/thumbnails/image_contents/0/uqgq1/coolinarka-pd4_1068x710_1_0.jpg" />
           <span>30.-3.4.2022</span>
           <span>ASIE</span>
         </div>
         <div className="Akce-block">
+          <img src="https://restaurace.pivovarskedomy.cz/files/thumbnails/image_contents/0/uqgq1/coolinarka-pd4_1068x710_1_0.jpg" />
           <span>30.-3.4.2022</span>
           <span>ASIE</span>
         </div>
@@ -114,7 +121,9 @@ function App() {
           V salonku pro uzavřenou společnost můžete využít audiovizuální techniku pro vlastní promítání nebo hudbu.
 
           Ve vnitrobloku je parkoviště pro hosty.</p>
+        <img src="https://restaurace.pivovarskedomy.cz/files/thumbnails/image_contents/0/nikk3/jidlo-2_1068x710_1_0.JPG" />
         <div className="Footer-info-block">
+          <span>LOGO</span>
           <div className="Footer-part">
             <h2>PIVOVARSKÉ DOMY</h2>
             <span>Velké náměstí 26
