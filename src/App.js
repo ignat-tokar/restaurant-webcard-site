@@ -1,6 +1,7 @@
 import './App.css';
 import mainBackgroundImage from './assets/main-background.jpeg';
 import menuBackgroundImage from './assets/menu-background.jpeg';
+import footerImage from './assets/footer.jpg';
 
 function App() {
   return (
@@ -104,7 +105,7 @@ function App() {
 
       <div className="Akce">
         <h2>PLÁNOVANÉ AKCE</h2>
-        <h3>Nenechte si ujít nejbližší akce</h3>
+        <p>Nenechte si ujít nejbližší akce</p>
         <div className="Akce-block">
           <img src="https://restaurace.pivovarskedomy.cz/files/thumbnails/image_contents/0/uqgq1/coolinarka-pd4_1068x710_1_0.jpg" />
           <span id="date">30.-3.4.2022</span>
@@ -112,22 +113,28 @@ function App() {
         </div>
         <div className="Akce-block">
           <img src="https://restaurace.pivovarskedomy.cz/files/thumbnails/image_contents/0/uqgq1/coolinarka-pd4_1068x710_1_0.jpg" />
-          <span>30.-3.4.2022</span>
-          <span>ASIE</span>
+          <span id="date">30.-3.4.2022</span>
+          <span id="akce-title">ASIE</span>
         </div>
-        <span id="akce-button">Dalsi</span>
+        <div id="button-block">
+          <span id="akce-button">Dalsi</span>
+        </div>
       </div>
 
       <div className="Footer">
-        <h2>MÍSTO PRO VEČÍREK, OSLAVU I SVATEBNÍ HOSTINU</h2>
-        <p>Jsme oblíbeným místem pro firemní i soukromé večírky, obchodní schůzky i romantické večeře ve dvou. Na větší akce vám rádi sestavíme zvláštní menu.
+        <div className="Footer-background"
+          style={{
+            backgroundImage: `url('${footerImage}')`
+          }}
+        >
+          <h2>MÍSTO PRO VEČÍREK, OSLAVU I SVATEBNÍ HOSTINU</h2>
+          <p>Jsme oblíbeným místem pro firemní i soukromé večírky, obchodní schůzky i romantické večeře ve dvou. Na větší akce vám rádi sestavíme zvláštní menu.
 
-          V salonku pro uzavřenou společnost můžete využít audiovizuální techniku pro vlastní promítání nebo hudbu.
+          </p><p>V salonku pro uzavřenou společnost můžete využít audiovizuální techniku pro vlastní promítání nebo hudbu.
 
-          Ve vnitrobloku je parkoviště pro hosty.</p>
-        <img src="https://restaurace.pivovarskedomy.cz/files/thumbnails/image_contents/0/nikk3/jidlo-2_1068x710_1_0.JPG" />
+          </p><p>Ve vnitrobloku je parkoviště pro hosty.</p>
+        </div>
         <div className="Footer-info-block">
-          <span>LOGO</span>
           <div className="Footer-part">
             <h2>PIVOVARSKÉ DOMY</h2>
             <span>Velké náměstí 26
@@ -135,19 +142,20 @@ function App() {
               500 03</span>
           </div>
           <div className="Footer-part">
+            <h2>OTEVÍRACÍ DOBA</h2>
+            <p>po - čt    11:00 - 23:00
+
+            </p><p>pá - so    11:00 - 24:00
+
+            </p><p>ne       11:00 - 16:00
+            </p>
+          </div>          
+          <div className="Footer-part">
             <h2>RYCHLÝ KONTAKT</h2>
             <span>info@pivovarskedomy.cz
               +420 734 245 400</span>
           </div>
-          <div className="Footer-part">
-            <h2>OTEVÍRACÍ DOBA</h2>
-            <span>po - čt    11:00 - 23:00
 
-              pá - so    11:00 - 24:00
-
-              ne       11:00 - 16:00
-            </span>
-          </div>
         </div>
       </div>
     </div>

@@ -128,6 +128,9 @@ hr {
   margin: 1%;
   background-repeat: round;
 }
+.Vertical-menu:hover {
+  background-size: 150%;
+}
 .Vertical-menu h2 {
   font-size: 25pt;
   font-weight: 600;
@@ -135,6 +138,10 @@ hr {
   padding-left: 30pt;
   color: white;
   width: 20%;
+  cursor: pointer;
+}
+.Vertical-menu h2:hover {
+  text-decoration: underline;
 }
 .Vertical-menu a {
   float: left;
@@ -164,6 +171,10 @@ hr {
   padding-left: 30pt;
   color: white;
   /* width: 20%; */
+  cursor: pointer;
+}
+.Horizontal-menu h2:hover {
+  text-decoration: underline;
 }
 .Horizontal-menu a {
   float: left;
@@ -175,21 +186,94 @@ hr {
   color: white;
 }
 
-/* .Akce */
-/* h2 */
-/* h3 */
-/* .Akce-block */
-/* img */
-/* #date */
-/* #akce-title */
-/* #akce-button */
+.Akce {
+  width: 80%;
+  margin: 70pt auto;
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;    
+}
+.Akce-block {
+  width: 47.5%;
+  height: 30vh;
+  float: left;
+  margin: 1%;
+  background-repeat: round;
+}
+.Akce-block img {
+  width: 100%;
+}
+.Akce-block #date {
+  font-size: 16pt;
+  color:rgb(145, 144, 79);
+  font-weight: 300;
+  padding-top: 20pt;
+  padding-left: 20pt;
+  float: left;
+}
+.Akce-block #akce-title {
+  font-size: 20pt;
+  text-transform: uppercase;
+  color:black;
+  font-weight: 500;
+  padding-top: 20pt;
+  padding-left: 20pt;
+  float: left;  
+  width: 100%;
+}
+#button-block {
+  width: 100%;
+  float: left;
+  margin-top: 40vh;
+}
+#akce-button {
+  width: 15%;
+  float: left;
+  margin: 30pt 40%;
+  font-size: 18pt;
+  text-align: center;
+  padding: 10pt 34pt;
+  color: rgb(145, 144, 79);
+  border: solid 1px rgb(145, 144, 79);
+  cursor: pointer;
+}
+#akce-button:hover {
+  background-color:rgb(145, 144, 79);
+  color: white;  
+}
 
-/* .Footer */
-/* h2 */
-/* p */
-/* img */
-/* .Footer-info-block */
-/* #logo  */
-/* .Footer-part */
-/* h2 */
-/* span */
+.Footer {
+  width: 100%;
+  min-height: 100vh;
+}
+.Footer-background {
+  padding: 70pt 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.Footer-background h2 {
+  font-weight: 400;
+}
+.Footer-background p {
+  font-weight: 250;
+  color: white;
+}
+
+.Footer-info-block {
+  min-height: 20vh;
+  padding-top: 15pt;
+}
+.Footer-info-block p {
+  padding-bottom: 0;
+  font-size: 13pt;
+  font-weight: 400;
+}
+.Footer-info-block h2 {
+  margin: 0;
+}
+.Footer-part {
+  width: 33%;
+  float: left;
+  text-align: center;
+}
+
