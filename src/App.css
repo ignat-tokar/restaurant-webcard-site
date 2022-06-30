@@ -1,0 +1,195 @@
+.Main-background {
+  width: 100%;
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.Menu {
+  float: left;
+  width: 100%;
+  padding-top: 20pt;
+}
+#logo {
+  width: 20%;
+  float: left;
+  font-size: 25pt;
+  color: white;
+  text-align: center;
+  padding-top: 8pt;
+}
+ul {
+  width: 40%;
+  float: right;
+}
+li {
+  float: left;
+  list-style-type: none;
+  margin-right: 35pt;
+  font-size: 18pt;
+  font-weight: 500;
+  color: white;
+  text-align: left;
+  cursor: pointer;
+}
+#title {
+  width: 100%;
+  float: left;
+  padding-top: 35vh;
+  text-align: center;
+  font-size: 30pt;
+  font-weight: 600;
+  color: white;
+}
+
+.O-nas {
+  width: 100%;
+  min-height: 80vh;
+  padding: 10vh 0;
+}
+h2 {
+  font-size: 16pt;
+  font-weight: 300;
+  color: rgb(145, 144, 79);
+  text-align: center;
+  padding-bottom: 20pt;
+}
+.p-block {
+  display: block;
+  width: 100%;
+  float: left;
+}
+p {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  font-size: 21pt;
+  padding-bottom: 30pt;
+  font-weight: 350;
+}
+#cist-dale {
+  width: 15%;
+  float: left;
+  margin: 30pt 40%;
+  font-size: 18pt;
+  text-align: center;
+  padding: 10pt 34pt;
+  color: rgb(145, 144, 79);
+  border: solid 1px rgb(145, 144, 79);
+  cursor: pointer;
+}
+#cist-dale:hover {
+  background-color:rgb(145, 144, 79);
+  color: white;
+}
+
+.Menu-today {
+  width: 100%;
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 10vh 0;
+}
+#menu-title {
+  color: white;
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 16pt;
+}
+#menu-row {
+  color: white;
+  padding: 5pt 0;
+  width: 80%;
+  font-size: 15pt;
+  font-weight: 400;
+}
+hr {
+  background-color: rgb(145, 144, 79);
+  height: 2px;
+  width: 5%;
+  border: none;
+  margin: 10pt auto;
+}
+
+.Menu-all {
+  width: 80%;
+  margin: 40pt auto;
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;  
+}
+.Vertical-menu-wrapper {
+  width: 100%;
+  float: left;
+}
+.Vertical-menu {
+  width: 31%;
+  height: 70vh;
+  float: left;
+  margin: 1%;
+  background-repeat: round;
+}
+.Vertical-menu h2 {
+  font-size: 25pt;
+  font-weight: 600;
+  float: left;
+  padding-left: 30pt;
+  color: white;
+  width: 20%;
+}
+.Vertical-menu a {
+  float: left;
+  width: 100%;
+  padding-left: 30pt;
+  color: rgb(145, 144, 79);
+}
+.Vertical-menu a:hover {
+  color: white;
+}
+
+.Horizontal-menu-wrapper {
+  width: 100%;
+  float: left;
+}
+.Horizontal-menu {
+  width: 47.5%;
+  height: 30vh;
+  float: left;
+  margin: 1%;
+  background-repeat: round;
+}
+.Horizontal-menu h2 {
+  font-size: 25pt;
+  font-weight: 600;
+  float: left;
+  padding-left: 30pt;
+  color: white;
+  /* width: 20%; */
+}
+.Horizontal-menu a {
+  float: left;
+  width: 100%;
+  padding-left: 30pt;
+  color: rgb(145, 144, 79);
+}
+.Horizontal-menu a:hover {
+  color: white;
+}
+
+/* .Akce */
+/* h2 */
+/* h3 */
+/* .Akce-block */
+/* img */
+/* #date */
+/* #akce-title */
+/* #akce-button */
+
+/* .Footer */
+/* h2 */
+/* p */
+/* img */
+/* .Footer-info-block */
+/* #logo  */
+/* .Footer-part */
+/* h2 */
+/* span */
