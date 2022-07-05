@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/restaurant-webcard-site/static/css/main.7fe9ee74.css",
-    "main.js": "/restaurant-webcard-site/static/js/main.faea0b17.js",
+    "main.css": "/restaurant-webcard-site/static/css/main.b7ce334f.css",
+    "main.js": "/restaurant-webcard-site/static/js/main.eba54445.js",
     "static/js/787.f85dabeb.chunk.js": "/restaurant-webcard-site/static/js/787.f85dabeb.chunk.js",
     "static/media/footer.jpg": "/restaurant-webcard-site/static/media/footer.1df519b417e70c3fdca5.jpg",
     "static/media/menu-background.jpeg": "/restaurant-webcard-site/static/media/menu-background.516cf6811462e5aa3c05.jpeg",
     "static/media/main-background.jpeg": "/restaurant-webcard-site/static/media/main-background.abf49ab0bc0d79eb25df.jpeg",
     "index.html": "/restaurant-webcard-site/index.html",
-    "main.7fe9ee74.css.map": "/restaurant-webcard-site/static/css/main.7fe9ee74.css.map",
-    "main.faea0b17.js.map": "/restaurant-webcard-site/static/js/main.faea0b17.js.map",
+    "main.b7ce334f.css.map": "/restaurant-webcard-site/static/css/main.b7ce334f.css.map",
+    "main.eba54445.js.map": "/restaurant-webcard-site/static/js/main.eba54445.js.map",
     "787.f85dabeb.chunk.js.map": "/restaurant-webcard-site/static/js/787.f85dabeb.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7fe9ee74.css",
-    "static/js/main.faea0b17.js"
+    "static/css/main.b7ce334f.css",
+    "static/js/main.eba54445.js"
   ]
 }
