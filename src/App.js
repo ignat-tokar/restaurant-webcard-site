@@ -106,7 +106,7 @@ function App() {
       <div className="Akce">
         <h2>PLÁNOVANÉ AKCE</h2>
         <p>Nenechte si ujít nejbližší akce</p>
-        <div className="Akce-block">
+        <div className="Akce-block mobile">
           <img src="https://restaurace.pivovarskedomy.cz/files/thumbnails/image_contents/0/uqgq1/coolinarka-pd4_1068x710_1_0.jpg" />
           <span id="date">30.-3.4.2022</span>
           <span id="akce-title">ASIE</span>
@@ -137,9 +137,9 @@ function App() {
         <div className="Footer-info-block">
           <div className="Footer-part">
             <h2>PIVOVARSKÉ DOMY</h2>
-            <span>Velké náměstí 26
+            <span>Velké náměstí 78
               Hradec Králové
-              500 03</span>
+              512 03</span>
           </div>
           <div className="Footer-part">
             <h2>OTEVÍRACÍ DOBA</h2>
@@ -153,7 +153,7 @@ function App() {
           <div className="Footer-part">
             <h2>RYCHLÝ KONTAKT</h2>
             <span>info@pivovarskedomy.cz
-              +420 734 245 400</span>
+              +420 345 343 530</span>
           </div>
 
         </div>
