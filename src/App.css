@@ -454,7 +454,7 @@ hr {
     font-size: 25pt;
     font-weight: 600;
     float: left;
-    padding-left: 30pt;
+    padding-left: 20pt;
     color: white;
     cursor: pointer;
   }
@@ -464,7 +464,7 @@ hr {
   .Horizontal-menu a {
     float: left;
     width: 100%;
-    padding-left: 30pt;
+    padding-left: 20pt;
     color: rgb(145, 144, 79);
   }
   .Horizontal-menu a:hover {
