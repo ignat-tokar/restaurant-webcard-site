@@ -571,4 +571,20 @@ hr {
     text-align: center;
     padding-bottom: 20pt;
   }
+
+  /* MENU ADAPTIVE */
+  .Menu-button-adaptive {
+    width: 10%;
+    float: right;
+    margin-right: 8%;
+    margin-top: 2%;
+  }
+  .Menu-button-adaptive img {
+    width: 100%;
+  }
+  .Menu-block-adapive {
+    width: 100%;
+    display: block;
+    background-color: white;
+  }
 }

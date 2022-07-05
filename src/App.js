@@ -1,9 +1,52 @@
+import { useState } from 'react';
 import './App.css';
 import mainBackgroundImage from './assets/main-background.jpeg';
 import menuBackgroundImage from './assets/menu-background.jpeg';
 import footerImage from './assets/footer.jpg';
+import menuIcon from './assets/menu.png';
+import exitIcon from './assets/exit.png';
+
+
+function MenuButton() {
+
+  const [open, setOpen] = useState(false);
+
+  const openHandler = () => {
+    setOpen(true);
+    let div = window.document.querySelector('.Menu-button-adaptive');
+    div.style.width = "100%";
+    div.style.marginRight = "0%";
+  }
+  const exitHandler = () => {
+    setOpen(false);
+    let div = window.document.querySelector('.Menu-button-adaptive');
+    div.style.width = "10%";
+    div.style.marginRight = "8%";
+  }
+
+  return (
+    <div className="Menu-button-adaptive">
+      {open 
+        ? <div className="Menu-block-adaptive">
+            {/* #6A6A6A */}
+            <img onClick={exitHandler} src={exitIcon} />
+            {/* <span onClick={()=>setOpen(false)}>hello</span> */}
+          </div>
+        : <img onClick={openHandler} src={menuIcon} />
+      }
+    </div>
+
+  );
+}
 
 function App() {
+
+  const [isAdaptive, setIsAdaptive] = useState(
+    window.screen.width < 480 ? true : false
+  );
+
+  console.log(isAdaptive);
+
   return (
     <div>
       <div className="Main-background"
@@ -13,12 +56,16 @@ function App() {
       >
         <div className="Menu">
           <span id="logo">LOGO</span>
-          <ul>
-            <li>O NAS</li>
-            <li>MENU</li>
-            <li>AKCE</li>
-            <li>KONTAKT</li>
-          </ul>
+          {isAdaptive
+            ? <MenuButton />
+            : <ul>
+              <li>O NAS</li>
+              <li>MENU</li>
+              <li>AKCE</li>
+              <li>KONTAKT</li>
+            </ul>
+          }
+
         </div>
         <span id="title">PIVO KLENOT</span>
       </div>
@@ -106,7 +153,7 @@ function App() {
       <div className="Akce">
         <h2>PLÁNOVANÉ AKCE</h2>
         <p>Nenechte si ujít nejbližší akce</p>
-        <div className="Akce-block mobile">
+        <div className="Akce-block">
           <img src="https://restaurace.pivovarskedomy.cz/files/thumbnails/image_contents/0/uqgq1/coolinarka-pd4_1068x710_1_0.jpg" />
           <span id="date">30.-3.4.2022</span>
           <span id="akce-title">ASIE</span>
@@ -149,7 +196,7 @@ function App() {
 
             </p><p>ne       11:00 - 16:00
             </p>
-          </div>          
+          </div>
           <div className="Footer-part">
             <h2>RYCHLÝ KONTAKT</h2>
             <span>info@pivovarskedomy.cz
