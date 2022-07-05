@@ -3,6 +3,7 @@
   min-height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
 }
 .Menu {
   float: left;
@@ -32,6 +33,10 @@ li {
   text-align: left;
   cursor: pointer;
 }
+li:hover {
+  text-decoration: underline;
+  text-underline-offset: 10pt;
+}
 #title {
   width: 100%;
   float: left;
@@ -46,6 +51,8 @@ li {
   width: 100%;
   min-height: 80vh;
   padding: 10vh 0;
+  opacity: 0;
+  animation: ani 2.5s forwards;
 }
 h2 {
   font-size: 16pt;
@@ -88,6 +95,7 @@ p {
   min-height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
   padding: 10vh 0;
 }
 #menu-title {
@@ -250,6 +258,7 @@ hr {
   padding: 70pt 0;
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
 }
 .Footer-background h2 {
   font-weight: 400;
@@ -275,6 +284,11 @@ hr {
   width: 33%;
   float: left;
   text-align: center;
+}
+
+@keyframes ani {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
 }
 
 @media(max-width: 480px) {
@@ -397,10 +411,9 @@ hr {
     margin: 40pt;
     margin-left: 4%;
     margin-right: 5%;
-
     min-height: 100vh;
     background-repeat: no-repeat;
-    background-size: cover;  
+    background-size: cover;
   }
   .Vertical-menu-wrapper {
     width: 100%;
@@ -545,6 +558,7 @@ hr {
     padding: 70pt 0;
     background-repeat: no-repeat;
     background-size: cover;
+    background-position-x: center;
   }
   .Footer-background h2 {
     font-weight: 400;
