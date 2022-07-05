@@ -7,35 +7,23 @@ import menuIcon from './assets/menu.png';
 import exitIcon from './assets/exit.png';
 
 
-function MenuButton() {
-
-  const [open, setOpen] = useState(false);
-
-  const openHandler = () => {
-    setOpen(true);
-    let div = window.document.querySelector('.Menu-button-adaptive');
-    div.style.width = "100%";
-    div.style.marginRight = "0%";
-  }
-  const exitHandler = () => {
-    setOpen(false);
-    let div = window.document.querySelector('.Menu-button-adaptive');
-    div.style.width = "10%";
-    div.style.marginRight = "8%";
-  }
+function MenuButton(props) {
 
   return (
     <div className="Menu-button-adaptive">
-      {open 
-        ? <div className="Menu-block-adaptive">
-            {/* #6A6A6A */}
-            <img onClick={exitHandler} src={exitIcon} />
-            {/* <span onClick={()=>setOpen(false)}>hello</span> */}
-          </div>
-        : <img onClick={openHandler} src={menuIcon} />
-      }
+      <div className="Menu-block-adaptive">
+        <div onClick={props.exitHandler}>
+          <img src={exitIcon} />
+          <span>ZAVRIT MENU</span>
+          <hr />
+        </div>
+        <div><li>O NAS</li>
+          <li>MENU</li>
+          <li>AKCE</li>
+          <li>KONTAKT</li>
+        </div>
+      </div>
     </div>
-
   );
 }
 
@@ -44,8 +32,14 @@ function App() {
   const [isAdaptive, setIsAdaptive] = useState(
     window.screen.width < 480 ? true : false
   );
+  const [open, setOpen] = useState(false);
 
-  console.log(isAdaptive);
+  const openHandler = () => {
+    setOpen(true);
+  }
+  const exitHandler = () => {
+    setOpen(false);
+  }
 
   return (
     <div>
@@ -54,20 +48,28 @@ function App() {
           backgroundImage: `url('${mainBackgroundImage}')`
         }}
       >
-        <div className="Menu">
-          <span id="logo">LOGO</span>
-          {isAdaptive
-            ? <MenuButton />
-            : <ul>
-              <li>O NAS</li>
-              <li>MENU</li>
-              <li>AKCE</li>
-              <li>KONTAKT</li>
-            </ul>
-          }
-
-        </div>
-        <span id="title">PIVO KLENOT</span>
+        {open
+          ? <MenuButton
+            open={open}
+            openHandler={openHandler}
+            exitHandler={exitHandler}
+          />
+          : <>
+            <div className="Menu">
+              <span id="logo">LOGO</span>
+              {isAdaptive
+                ? <img id="exit-menu-button" onClick={openHandler} src={menuIcon} />
+                : <ul>
+                  <li>O NAS</li>
+                  <li>MENU</li>
+                  <li>AKCE</li>
+                  <li>KONTAKT</li>
+                </ul>
+              }
+            </div>
+            <span id="title">PIVO KLENOT</span>
+          </>
+        }
       </div>
       <div className="O-nas">
         <h2>O RESTAURACI</h2>
@@ -153,7 +155,7 @@ function App() {
       <div className="Akce">
         <h2>PLÁNOVANÉ AKCE</h2>
         <p>Nenechte si ujít nejbližší akce</p>
-        <div className="Akce-block">
+        <div className="Akce-block mobile">
           <img src="https://restaurace.pivovarskedomy.cz/files/thumbnails/image_contents/0/uqgq1/coolinarka-pd4_1068x710_1_0.jpg" />
           <span id="date">30.-3.4.2022</span>
           <span id="akce-title">ASIE</span>

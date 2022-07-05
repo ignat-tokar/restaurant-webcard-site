@@ -7,7 +7,7 @@
 .Menu {
   float: left;
   width: 100%;
-  padding-top: 20pt;
+  padding: 0pt;
 }
 #logo {
   width: 20%;
@@ -15,11 +15,12 @@
   font-size: 25pt;
   color: white;
   text-align: center;
-  padding-top: 8pt;
+  padding-top: 28pt;
 }
 ul {
   width: 40%;
   float: right;
+  padding-top: 20pt;
 }
 li {
   float: left;
@@ -574,17 +575,59 @@ hr {
 
   /* MENU ADAPTIVE */
   .Menu-button-adaptive {
-    width: 10%;
-    float: right;
+    width: 100%;
+    float: left;
     margin-right: 8%;
-    margin-top: 2%;
   }
-  .Menu-button-adaptive img {
-    width: 100%;
+  #exit-menu-button {
+    width: 10%;
+    padding-top: 6pt;
+    padding-right: 20pt;
+    float: right;
   }
-  .Menu-block-adapive {
+  .Menu-block-adaptive {
     width: 100%;
-    display: block;
+    height: 40vh;
+    margin-top: 0pt;
     background-color: white;
+  }
+  .Menu-block-adaptive img {
+    float: left;
+    width: 7%;
+    padding-left: 10pt;
+    margin-top: 10pt;
+  }
+  .Menu-block-adaptive span {
+    float: left;
+    width: 80%;
+    font-size: 15pt;
+    padding-top: 12pt;
+    padding-left: 10pt;
+    font-weight: 500;
+    color: #6A6A6A;
+  }
+  .Menu-block-adaptive hr {
+    float: left;
+    width: 100%;
+    background-color: #6A6A6A;
+  }
+  .Menu-block-adaptive ul {
+    width: 100%;
+    float: left;
+    padding-top: 0pt;
+  }
+  .Menu-block-adaptive li {
+    float: left;
+    list-style-type: none;
+    width: 100%;
+    padding-left: 15pt;
+    padding-top: 15pt;
+    padding-bottom: 10pt;
+    /* margin-right: 35pt; */
+    font-size: 18pt;
+    font-weight: 500;
+    color: black;
+    text-align: left;
+    cursor: pointer;
   }
 }
