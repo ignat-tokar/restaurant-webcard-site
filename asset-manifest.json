@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/restaurant-webcard-site/static/css/main.9851ede2.css",
-    "main.js": "/restaurant-webcard-site/static/js/main.b5bc1484.js",
+    "main.css": "/restaurant-webcard-site/static/css/main.aa35167e.css",
+    "main.js": "/restaurant-webcard-site/static/js/main.90ef2134.js",
     "static/js/787.f85dabeb.chunk.js": "/restaurant-webcard-site/static/js/787.f85dabeb.chunk.js",
-    "static/media/2.jpeg": "/restaurant-webcard-site/static/media/2.43a4dc01f1ee166ece05.jpeg",
-    "static/media/1.jpeg": "/restaurant-webcard-site/static/media/1.a0a84a5bfd3672f77091.jpeg",
-    "static/media/5.jpeg": "/restaurant-webcard-site/static/media/5.543daef50db95b1d6141.jpeg",
-    "static/media/6.jpeg": "/restaurant-webcard-site/static/media/6.6dab6cfd08feb52862b0.jpeg",
+    "static/media/2.jpeg": "/restaurant-webcard-site/static/media/2.6b86a814b6a82756cd20.jpeg",
+    "static/media/5.jpeg": "/restaurant-webcard-site/static/media/5.5609a3b981b744c7a34f.jpeg",
+    "static/media/4.jpeg": "/restaurant-webcard-site/static/media/4.c8d9b25895496da76ea3.jpeg",
+    "static/media/1.jpeg": "/restaurant-webcard-site/static/media/1.8e73e6824fc0af921cbb.jpeg",
+    "static/media/3.jpeg": "/restaurant-webcard-site/static/media/3.600a78429bcee9aba654.jpeg",
+    "static/media/6.jpeg": "/restaurant-webcard-site/static/media/6.5865753cd11e2c0c85e6.jpeg",
     "static/media/footer.jpg": "/restaurant-webcard-site/static/media/footer.1df519b417e70c3fdca5.jpg",
-    "static/media/4.jpeg": "/restaurant-webcard-site/static/media/4.2c11592e71ecde41212b.jpeg",
-    "static/media/3.jpeg": "/restaurant-webcard-site/static/media/3.4dc59293088700eb9bd7.jpeg",
     "static/media/menu-background.jpeg": "/restaurant-webcard-site/static/media/menu-background.516cf6811462e5aa3c05.jpeg",
     "static/media/main-background.jpeg": "/restaurant-webcard-site/static/media/main-background.abf49ab0bc0d79eb25df.jpeg",
     "index.html": "/restaurant-webcard-site/index.html",
-    "main.9851ede2.css.map": "/restaurant-webcard-site/static/css/main.9851ede2.css.map",
-    "main.b5bc1484.js.map": "/restaurant-webcard-site/static/js/main.b5bc1484.js.map",
+    "main.aa35167e.css.map": "/restaurant-webcard-site/static/css/main.aa35167e.css.map",
+    "main.90ef2134.js.map": "/restaurant-webcard-site/static/js/main.90ef2134.js.map",
     "787.f85dabeb.chunk.js.map": "/restaurant-webcard-site/static/js/787.f85dabeb.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9851ede2.css",
-    "static/js/main.b5bc1484.js"
+    "static/css/main.aa35167e.css",
+    "static/js/main.90ef2134.js"
   ]
 }
