@@ -1,18 +1,24 @@
 {
   "files": {
-    "main.css": "/restaurant-webcard-site/static/css/main.254a5aa1.css",
-    "main.js": "/restaurant-webcard-site/static/js/main.e9ad1b07.js",
+    "main.css": "/restaurant-webcard-site/static/css/main.a59d64a8.css",
+    "main.js": "/restaurant-webcard-site/static/js/main.bfb2dec0.js",
     "static/js/787.f85dabeb.chunk.js": "/restaurant-webcard-site/static/js/787.f85dabeb.chunk.js",
+    "static/media/2.jpeg": "/restaurant-webcard-site/static/media/2.6b86a814b6a82756cd20.jpeg",
+    "static/media/1.jpeg": "/restaurant-webcard-site/static/media/1.d3017e63aee030b7522f.jpeg",
+    "static/media/5.jpeg": "/restaurant-webcard-site/static/media/5.5609a3b981b744c7a34f.jpeg",
+    "static/media/4.jpeg": "/restaurant-webcard-site/static/media/4.c8d9b25895496da76ea3.jpeg",
+    "static/media/3.jpeg": "/restaurant-webcard-site/static/media/3.600a78429bcee9aba654.jpeg",
+    "static/media/6.jpeg": "/restaurant-webcard-site/static/media/6.5865753cd11e2c0c85e6.jpeg",
     "static/media/footer.jpg": "/restaurant-webcard-site/static/media/footer.1df519b417e70c3fdca5.jpg",
     "static/media/menu-background.jpeg": "/restaurant-webcard-site/static/media/menu-background.516cf6811462e5aa3c05.jpeg",
     "static/media/main-background.jpeg": "/restaurant-webcard-site/static/media/main-background.abf49ab0bc0d79eb25df.jpeg",
     "index.html": "/restaurant-webcard-site/index.html",
-    "main.254a5aa1.css.map": "/restaurant-webcard-site/static/css/main.254a5aa1.css.map",
-    "main.e9ad1b07.js.map": "/restaurant-webcard-site/static/js/main.e9ad1b07.js.map",
+    "main.a59d64a8.css.map": "/restaurant-webcard-site/static/css/main.a59d64a8.css.map",
+    "main.bfb2dec0.js.map": "/restaurant-webcard-site/static/js/main.bfb2dec0.js.map",
     "787.f85dabeb.chunk.js.map": "/restaurant-webcard-site/static/js/787.f85dabeb.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.254a5aa1.css",
-    "static/js/main.e9ad1b07.js"
+    "static/css/main.a59d64a8.css",
+    "static/js/main.bfb2dec0.js"
   ]
 }
