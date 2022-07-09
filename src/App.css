@@ -92,7 +92,7 @@ p {
 
 .Menu-today {
   width: 100%;
-  min-height: 100vh;
+  min-height: 50vh;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -129,8 +129,9 @@ hr {
 .Vertical-menu-wrapper {
   width: 100%;
   float: left;
+  margin-bottom: 40pt;
 }
-.Vertical-menu {
+.Vertical-menu img {
   width: 31%;
   height: 70vh;
   float: left;
@@ -252,6 +253,7 @@ hr {
 
 .Footer {
   width: 100%;
+  float: left;
   min-height: 100vh;
 }
 .Footer-background {
@@ -380,7 +382,7 @@ hr {
   
   .Menu-today {
     width: 100%;
-    min-height: 100vh;
+    min-height: 50vh;
     background-repeat: no-repeat;
     background-size: cover;
     padding: 7vh 0;
@@ -420,7 +422,7 @@ hr {
     float: left;
     margin-bottom: 4%;
   }
-  .Vertical-menu {
+  .Vertical-menu img {
     width: 100%;
     height: 57vh;
     float: left;
