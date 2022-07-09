@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/restaurant-webcard-site/static/css/main.c45372ea.css",
-    "main.js": "/restaurant-webcard-site/static/js/main.a0524a50.js",
+    "main.js": "/restaurant-webcard-site/static/js/main.3b015d22.js",
     "static/js/787.f85dabeb.chunk.js": "/restaurant-webcard-site/static/js/787.f85dabeb.chunk.js",
     "static/media/2.jpeg": "/restaurant-webcard-site/static/media/2.113ab68ede9ea0638ac9.jpeg",
     "static/media/1.jpeg": "/restaurant-webcard-site/static/media/1.f615d78107a1cb38bee4.jpeg",
@@ -9,18 +9,18 @@
     "static/media/6.jpeg": "/restaurant-webcard-site/static/media/6.4c6d184d8499d56dec07.jpeg",
     "static/media/a1.jpeg": "/restaurant-webcard-site/static/media/a1.6a3f4871f1615fbd464c.jpeg",
     "static/media/footer.jpg": "/restaurant-webcard-site/static/media/footer.1df519b417e70c3fdca5.jpg",
+    "static/media/a2.jpeg": "/restaurant-webcard-site/static/media/a2.49fa3ecde283f2c70cc3.jpeg",
     "static/media/4.jpeg": "/restaurant-webcard-site/static/media/4.770419c3776cba2c476e.jpeg",
     "static/media/3.jpeg": "/restaurant-webcard-site/static/media/3.9033b8a1c02dbfc59944.jpeg",
-    "static/media/a2.jpeg": "/restaurant-webcard-site/static/media/a2.417a2792c920536dd59f.jpeg",
     "static/media/menu-background.jpeg": "/restaurant-webcard-site/static/media/menu-background.516cf6811462e5aa3c05.jpeg",
     "static/media/main-background.jpeg": "/restaurant-webcard-site/static/media/main-background.abf49ab0bc0d79eb25df.jpeg",
     "index.html": "/restaurant-webcard-site/index.html",
     "main.c45372ea.css.map": "/restaurant-webcard-site/static/css/main.c45372ea.css.map",
-    "main.a0524a50.js.map": "/restaurant-webcard-site/static/js/main.a0524a50.js.map",
+    "main.3b015d22.js.map": "/restaurant-webcard-site/static/js/main.3b015d22.js.map",
     "787.f85dabeb.chunk.js.map": "/restaurant-webcard-site/static/js/787.f85dabeb.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c45372ea.css",
-    "static/js/main.a0524a50.js"
+    "static/js/main.3b015d22.js"
   ]
 }
