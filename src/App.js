@@ -188,6 +188,7 @@ function App() {
         {open
           ? <MenuButton
             open={open}
+            exitHandler={exitHandler}
             onasScroll={onasScroll}
             menuScroll={menuScroll}
             akceScroll={akceScroll}
