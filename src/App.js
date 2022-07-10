@@ -12,6 +12,9 @@ import m4 from './assets/4.jpeg';
 import m5 from './assets/5.jpeg';
 import m6 from './assets/6.jpeg';
 
+import a1 from './assets/a1.jpeg';
+import a2 from './assets/a2.jpeg';
+
 function MenuButton(props) {
 
   return (
@@ -22,10 +25,11 @@ function MenuButton(props) {
           <span>ZAVRIT MENU</span>
           <hr />
         </div>
-        <div><li>O NAS</li>
-          <li>MENU</li>
-          <li>AKCE</li>
-          <li>KONTAKT</li>
+        <div>
+        <li onClick={props.onasScroll}>O NAS</li>
+        <li onClick={props.menuScroll}>MENU</li>
+        <li onClick={props.akceScroll}>AKCE</li>
+        <li onClick={props.contactScroll}>KONTAKT</li>
         </div>
       </div>
     </div>
@@ -38,17 +42,20 @@ function App() {
     window.screen.width < 480 ? true : false
   );
   const [open, setOpen] = useState(false);
-  let newDate = new Date().toLocaleDateString();
+  
 
-  const [date, setDate] = useState(
-    newDate.split('/')[1] + '.' +
-    newDate.split('/')[0] + '.' +
-    newDate.split('/')[2]);
+  const [date, setDate] = useState();
 
   const [day, setDay] = useState(new Date().toDateString().split(' ')[0]);
   const [dayText, setDayText] = useState(null);
 
   useEffect(()=>{
+
+    let newDate = new Date().toLocaleDateString();
+    setDate(
+    newDate.split('/')[1] + '.' +
+    newDate.split('/')[0] + '.' +
+    newDate.split('/')[2])
 
     switch(day){
       case 'Mon': {
@@ -160,6 +167,17 @@ function App() {
     setOpen(false);
   }
 
+  const scrollHandler = (identifier) => {
+    let elem = window.document.querySelector(identifier);
+    elem.scrollIntoView(true);
+  }
+
+  const contactScroll = () => scrollHandler('.Footer-info-block');
+
+  const onasScroll = () => scrollHandler('.O-nas');
+  const menuScroll = () => scrollHandler('.Menu-all');
+  const akceScroll = () => scrollHandler('.Akce-block');
+
   return (
     <div>
       <div className="Main-background"
@@ -170,8 +188,10 @@ function App() {
         {open
           ? <MenuButton
             open={open}
-            openHandler={openHandler}
-            exitHandler={exitHandler}
+            onasScroll={onasScroll}
+            menuScroll={menuScroll}
+            akceScroll={akceScroll}
+            contactScroll={contactScroll}
           />
           : <>
             <div className="Menu">
@@ -179,10 +199,10 @@ function App() {
               {isAdaptive
                 ? <img id="exit-menu-button" onClick={openHandler} src={menuIcon} />
                 : <ul>
-                  <li>O NAS</li>
-                  <li>MENU</li>
-                  <li>AKCE</li>
-                  <li>KONTAKT</li>
+                  <li onClick={onasScroll}>O NAS</li>
+                  <li onClick={menuScroll}>MENU</li>
+                  <li onClick={akceScroll}>AKCE</li>
+                  <li onClick={contactScroll}>KONTAKT</li>
                 </ul>
               }
             </div>
@@ -199,16 +219,14 @@ function App() {
 
           </p>
         </div>
-        <span id="cist-dale">ČÍST DÁLE</span>
+        {/* <span id="cist-dale">ČÍST DÁLE</span> */}
       </div>
       <div className="Menu-today"
         style={{
           backgroundImage: `url('${menuBackgroundImage}')`
         }}
       >
-        <p id="menu-title">Denni menu na {date}</p>
-        <hr />
-        <p id="menu-row">POLEDNÍ MENU</p>
+        <p id="menu-title">POLEDNÍ MENU na dnes</p>
         {dayText}
         
         {/* <hr />
@@ -219,6 +237,7 @@ function App() {
         <p id="menu-row">DEZERT ROZVOZ : Cheesecake se slaným karamelem a arašídy - 40,-</p> */}
       </div>
       <div className="Menu-all">
+        <h2>MENU</h2>
         <div className="Vertical-menu-wrapper">
           <div className="Vertical-menu"><img src={m1}/></div>
           <div className="Vertical-menu"><img src={m2}/></div>
@@ -263,23 +282,24 @@ function App() {
         </div> */}
       </div>
 
-      {/* <div className="Akce">
-        <h2>PLÁNOVANÉ AKCE</h2>
-        <p>Nenechte si ujít nejbližší akce</p>
-        <div className="Akce-block mobile">
-          <img src="https://restaurace.pivovarskedomy.cz/files/thumbnails/image_contents/0/uqgq1/coolinarka-pd4_1068x710_1_0.jpg" />
-          <span id="date">30.-3.4.2022</span>
-          <span id="akce-title">ASIE</span>
+      <div className="Akce">
+        {/* <h2>PLÁNOVANÉ AKCE</h2> */}
+
+        {/* <p>Nenechte si ujít nejbližší akce</p> */}
+        <div className="Akce-block">
+          <img src={a1} />
+          {/* <span id="date">30.-3.4.2022</span> */}
+          {/* <span id="akce-title">ASIE</span> */}
         </div>
         <div className="Akce-block">
-          <img src="https://restaurace.pivovarskedomy.cz/files/thumbnails/image_contents/0/uqgq1/coolinarka-pd4_1068x710_1_0.jpg" />
-          <span id="date">30.-3.4.2022</span>
-          <span id="akce-title">ASIE</span>
+          <img src={a2} />
+          {/* <span id="date">30.-3.4.2022</span> */}
+          {/* <span id="akce-title">ASIE</span> */}
         </div>
-        <div id="button-block">
+        {/* <div id="button-block">
           <span id="akce-button">Dalsi</span>
-        </div>
-      </div> */}
+        </div> */}
+      </div>
 
       <div className="Footer">
         <div className="Footer-background"
