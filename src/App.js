@@ -15,6 +15,10 @@ import m6 from './assets/6.jpeg';
 import a1 from './assets/a1.jpeg';
 import a2 from './assets/a2.jpeg';
 
+import backButtonImg from './assets/back.png';
+
+import { BrowserRouter, Route, Routes, useNavigate } from 'react-router-dom';
+
 function MenuButton(props) {
 
   return (
@@ -36,18 +40,55 @@ function MenuButton(props) {
   );
 }
 
-function App() {
+function Akce(){
+
+  let navigate = useNavigate();
+
+  const exitHandler = () => {
+    navigate('/restaurant-webcard-site');
+  }
+
+  return (
+    <div>
+      <div onClick={exitHandler} className="Akce-exit-block">
+        <img id="akce-exit-button" src={backButtonImg} />
+        <h2>Zpět na hlavní stránku</h2>
+      </div>
+      <div className="Akce">
+      
+        {/* <h2>PLÁNOVANÉ AKCE</h2> */}
+
+        {/* <p>Nenechte si ujít nejbližší akce</p> */}
+        <div className="Akce-block">
+          <img src={a1} />
+          {/* <span id="date">30.-3.4.2022</span> */}
+          {/* <span id="akce-title">ASIE</span> */}
+        </div>
+        <div className="Akce-block">
+          <img src={a2} />
+          {/* <span id="date">30.-3.4.2022</span> */}
+          {/* <span id="akce-title">ASIE</span> */}
+        </div>
+        {/* <div id="button-block">
+      <span id="akce-button">Dalsi</span>
+    </div> */}
+      </div>
+    </div>
+  );
+}
+
+function MainApp() {
 
   const [isAdaptive, setIsAdaptive] = useState(
     window.screen.width < 480 ? true : false
   );
   const [open, setOpen] = useState(false);
-  
-
   const [date, setDate] = useState();
 
   const [day, setDay] = useState(new Date().toDateString().split(' ')[0]);
   const [dayText, setDayText] = useState(null);
+
+  let navigate = useNavigate();
 
   useEffect(()=>{
 
@@ -176,7 +217,9 @@ function App() {
 
   const onasScroll = () => scrollHandler('.O-nas');
   const menuScroll = () => scrollHandler('.Menu-all');
-  const akceScroll = () => scrollHandler('.Akce-block');
+  const akceScroll = () => {
+    navigate('/restaurant-webcard-site/akce');
+  };
 
   return (
     <div>
@@ -283,25 +326,6 @@ function App() {
         </div> */}
       </div>
 
-      <div className="Akce">
-        {/* <h2>PLÁNOVANÉ AKCE</h2> */}
-
-        {/* <p>Nenechte si ujít nejbližší akce</p> */}
-        <div className="Akce-block">
-          <img src={a1} />
-          {/* <span id="date">30.-3.4.2022</span> */}
-          {/* <span id="akce-title">ASIE</span> */}
-        </div>
-        <div className="Akce-block">
-          <img src={a2} />
-          {/* <span id="date">30.-3.4.2022</span> */}
-          {/* <span id="akce-title">ASIE</span> */}
-        </div>
-        {/* <div id="button-block">
-          <span id="akce-button">Dalsi</span>
-        </div> */}
-      </div>
-
       <div className="Footer">
         <div className="Footer-background"
           style={{
@@ -338,6 +362,18 @@ function App() {
         </div>
       </div>
     </div>
+  );
+}
+
+function App() {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route exact path="/restaurant-webcard-site" element={<MainApp />}/>
+        <Route path="/restaurant-webcard-site/akce" element={<Akce />}/>
+      </Routes>
+    </BrowserRouter>
+
   );
 }
 
