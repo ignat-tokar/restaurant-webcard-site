@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import './App.css';
-import mainBackgroundImage from './assets/main-background.jpeg';
+import mainBackgroundImage from './assets/main-background.jpg';
+import mainBackgroundImageAdaptive from './assets/main-background-adaptive.jpg';
 import menuBackgroundImage from './assets/menu-background.jpeg';
 import footerImage from './assets/footer.jpg';
 import menuIcon from './assets/menu.png';
@@ -16,6 +17,7 @@ import a1 from './assets/a1.jpeg';
 import a2 from './assets/a2.jpeg';
 
 import backButtonImg from './assets/back.png';
+import logoImg from './assets/logo.png';
 
 import { BrowserRouter, Route, Routes, useNavigate } from 'react-router-dom';
 
@@ -220,7 +222,6 @@ function MainApp() {
   const akceScroll = () => {
     navigate('/restaurant-webcard-site/akce');
   };
-
   return (
     <div>
       <div className="Main-background"
@@ -239,7 +240,7 @@ function MainApp() {
           />
           : <>
             <div className="Menu">
-              <span id="logo">LOGO</span>
+              <img src={logoImg} id="logo" />
               {isAdaptive
                 ? <img id="exit-menu-button" onClick={openHandler} src={menuIcon} />
                 : <ul>
@@ -250,7 +251,7 @@ function MainApp() {
                 </ul>
               }
             </div>
-            <span id="title">PIVO KLENOT</span>
+            <span id="title">GOLDEN PALM</span>
           </>
         }
       </div>
