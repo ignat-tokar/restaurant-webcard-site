@@ -47,7 +47,7 @@ function Akce(){
   let navigate = useNavigate();
 
   const exitHandler = () => {
-    navigate('/restaurant-webcard-site');
+    navigate('/');
   }
 
   return (
@@ -220,7 +220,7 @@ function MainApp() {
   const onasScroll = () => scrollHandler('.O-nas');
   const menuScroll = () => scrollHandler('.Menu-all');
   const akceScroll = () => {
-    navigate('/restaurant-webcard-site/akce');
+    navigate('/akce');
   };
   return (
     <div>
@@ -370,8 +370,8 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route exact path="/restaurant-webcard-site" element={<MainApp />}/>
-        <Route path="/restaurant-webcard-site/akce" element={<Akce />}/>
+        <Route exact path="/" element={<MainApp />}/>
+        <Route path="/akce" element={<Akce />}/>
       </Routes>
     </BrowserRouter>
 
